@@ -1,0 +1,56 @@
+.quote {
+    box-shadow: 0px 2px 5px rgba(33, 37, 41, .1);
+    padding: 15px 30px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+    @media (max-width: $tablet-width) {
+        padding: 10px 15px;
+    }
+}
+
+.quote:hover {
+    box-shadow: 0px 4px 15px rgba(33, 37, 41, .25);
+}
+
+
+.quote__text {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.quote__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+    }    
+}
+
+
+.quote__tag-list {
+    display: flex;
+}
+
+
+.quote__info {
+    display: flex;
+}
+
+.quote__author {
+    margin-right: 5px;
+}
+
+.quote__date {
+    margin-left: 5px;
+}
+
+
+.quote__tag {
+    border: 1px solid $black;
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
