@@ -4,8 +4,7 @@
 // Variables
 @import 'variables';
 
-// Quotes
-@import './quote.scss';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import './pagination.scss';

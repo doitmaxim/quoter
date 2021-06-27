@@ -12,10 +12,12 @@ import VueRouter from 'vue-router';
 import routes from './routes.js';
 import store from './store/index.js'
 Vue.use(VueRouter);
+Vue.use(require('vue-resource'));
 
 
 Vue.component('modal-root', require('./components/ModalRoot.vue').default);
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
+Vue.component('pagination', require('laravel-vue-pagination'));
 
 const app = new Vue({
     store: store,

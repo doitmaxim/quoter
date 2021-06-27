@@ -1,61 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
-.quote {
-  box-shadow: 0px 2px 5px rgba(33, 37, 41, 0.1);
-  padding: 15px 30px;
-  transition: 0.3s all ease-in-out;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-@media (max-width: 768px) {
-  .quote {
-    padding: 10px 15px;
-  }
-}
-
-.quote:hover {
-  box-shadow: 0px 4px 15px rgba(33, 37, 41, 0.25);
-}
-
-.quote__text {
-  font-size: 1rem;
-  text-align: justify;
-}
-
-.quote__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .quote__footer {
-    flex-direction: column;
-  }
-}
-
-.quote__tag-list {
-  display: flex;
-}
-
-.quote__info {
-  display: flex;
-}
-
-.quote__author {
-  margin-right: 5px;
-}
-
-.quote__date {
-  margin-left: 5px;
-}
-
-.quote__tag {
-  border: 1px solid #212529;
-  padding: 3px 10px;
-  border-radius: 15px;
-  margin-right: 5px;
-}
-
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10057,4 +10001,14 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+.pagination li a {
+  color: #212529 !important;
+  cursor: pointer !important;
+}
+
+.pagination li.active a {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+  color: #fff !important;
 }

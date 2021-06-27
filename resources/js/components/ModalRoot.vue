@@ -42,7 +42,6 @@ export default {
         title() {
             const title = this.$store.getters['modal/getModalTitle']
             if (!title) return
-            console.log(title)
             return title
         },
         visible() {
@@ -78,7 +77,7 @@ export default {
     transition: .2s ease-in-out;
 
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width) {
         width: 99%;
     }
 }
