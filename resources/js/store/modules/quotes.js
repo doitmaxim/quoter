@@ -18,7 +18,6 @@ export default {
         loadQuotes( {commit}, page ) {
             Api().get('/quotes?page='+page)
                 .then( response  => {
-                    console.log(page)
                     commit('SET_QUOTES', response.data)
                 })
         }

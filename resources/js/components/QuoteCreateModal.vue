@@ -63,12 +63,11 @@ export default {
             e.preventDefault();
             this.errors = [];
 
-            if (this.selectedTags.length == 0) {
+            if (this.selectedTags.length === 0) {
                 this.errors.push('Хотя бы один тег должен быть выбран');
             }
 
             if (this.quote == null) {
-                console.log(this.quote)
                 this.errors.push('Поле "Цитата" не может быть пустым');
             }
 
